@@ -1,0 +1,28 @@
+===================================================================
+HOW TO UPDATE dashboard.php — ADD NEW PAGE LINKS TO NAVIGATION
+===================================================================
+
+In dashboard.php, find this block (around line 221):
+
+    <nav>
+        <a href="#trackers">Trackers</a>
+        <a href="#profile">Profile</a>
+        <a href="#history">History</a>
+        <a href="logout.php" class="logout-btn">Logout</a>
+    </nav>
+
+REPLACE IT WITH:
+
+    <nav>
+        <a href="#trackers">Trackers</a>
+        <a href="#history">History</a>
+        <a href="profile.php">👤 Profile</a>
+        <a href="food.php">🥗 Food</a>
+        <a href="reports.php">📊 Reports</a>
+        <a href="ai_coach.php">🤖 AI Coach</a>
+        <a href="logout.php" class="logout-btn">Logout</a>
+    </nav>
+
+That's the only change needed to dashboard.php.
+No CSS or layout changes required.
+===================================================================
